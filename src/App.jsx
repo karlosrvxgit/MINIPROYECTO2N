@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import "./App.css";
+import "/components/Card.css";
 import '/components/Nav.css';
 import Nav from "/components/Nav.jsx";
+import Card from "../components/Card";
 import Image from 'react'
 import logo from './img/logo.png'
 
@@ -36,12 +38,16 @@ function App() {
       <div id='img-logo'>
         <img src={logo} with='96'/>
       </div>
+    </nav>
+  
       <div>
-      <Nav />
-      </div>
-     
+        <Nav />
+       </div>
+       <div>
+        <Card />
+       </div>
       
-      </nav>
+      
 
     {/* Aquí te dejo un ejemplo de cómo podrías imprimir varios elementos a la vez. */}
       {data.map((el, i) => {
